@@ -1,0 +1,6 @@
+{
+  "name": "A.S.S Distribuidora de Bebidas",
+  "description": "Acesse WhatsApp, Instagram, localização e avaliação da A.S.S Distribuidora de Bebidas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
