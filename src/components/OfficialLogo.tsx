@@ -9,8 +9,7 @@ export const OfficialLogo: React.FC<OfficialLogoProps> = ({ className = '' }) =>
     <div className={`relative flex flex-col items-center justify-center ${className}`}>
       {/* Ambient warm amber back-glow behind the logo */}
       <div 
-        className="absolute -inset-4 sm:-inset-6 rounded-full bg-gradient-to-tr from-[#FFB000]/25 via-[#FFA000]/15 to-transparent blur-2xl pointer-events-none opacity-80 animate-pulse" 
-        style={{ animationDuration: '4s' }}
+        className="absolute -inset-4 sm:-inset-6 rounded-full bg-gradient-to-tr from-[#FFB000]/20 via-[#FFA000]/10 to-transparent blur-2xl pointer-events-none opacity-80" 
         aria-hidden="true"
       />
 

@@ -21,10 +21,10 @@ export const PlatformIcon3D: React.FC<PlatformIcon3DProps> = ({
     case 'whatsapp':
       return (
         <div
-          className={`relative ${sizeClasses} flex items-center justify-center rounded-2xl p-0.5 select-none transition-transform duration-300 group-hover:scale-105 ${className}`}
+          className={`relative ${sizeClasses} flex items-center justify-center rounded-2xl p-0.5 select-none ${className}`}
           style={{
             background: 'linear-gradient(135deg, rgba(37, 211, 102, 0.4) 0%, rgba(18, 140, 126, 0.2) 100%)',
-            boxShadow: '0 8px 24px -4px rgba(37, 211, 102, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.4)',
+            boxShadow: '0 4px 16px -2px rgba(37, 211, 102, 0.25)',
           }}
         >
           {/* Inner 3D Container */}
@@ -51,10 +51,10 @@ export const PlatformIcon3D: React.FC<PlatformIcon3DProps> = ({
     case 'instagram':
       return (
         <div
-          className={`relative ${sizeClasses} flex items-center justify-center rounded-2xl p-0.5 select-none transition-transform duration-300 group-hover:scale-105 ${className}`}
+          className={`relative ${sizeClasses} flex items-center justify-center rounded-2xl p-0.5 select-none ${className}`}
           style={{
             background: 'linear-gradient(135deg, rgba(225, 48, 108, 0.45) 0%, rgba(253, 29, 29, 0.3) 50%, rgba(247, 119, 55, 0.35) 100%)',
-            boxShadow: '0 8px 24px -4px rgba(225, 48, 108, 0.38), inset 0 1px 1px rgba(255, 255, 255, 0.4)',
+            boxShadow: '0 4px 16px -2px rgba(225, 48, 108, 0.25)',
           }}
         >
           {/* Inner 3D Container with Instagram official vibrant radial/diagonal gradient */}
@@ -92,10 +92,10 @@ export const PlatformIcon3D: React.FC<PlatformIcon3DProps> = ({
     case 'maps':
       return (
         <div
-          className={`relative ${sizeClasses} flex items-center justify-center rounded-2xl p-0.5 select-none transition-transform duration-300 group-hover:scale-105 ${className}`}
+          className={`relative ${sizeClasses} flex items-center justify-center rounded-2xl p-0.5 select-none ${className}`}
           style={{
             background: 'linear-gradient(135deg, rgba(66, 133, 244, 0.45) 0%, rgba(52, 168, 83, 0.3) 100%)',
-            boxShadow: '0 8px 24px -4px rgba(66, 133, 244, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.35)',
+            boxShadow: '0 4px 16px -2px rgba(66, 133, 244, 0.25)',
           }}
         >
           {/* Inner 3D Container with Maps style dark-glass depth */}
@@ -137,10 +137,10 @@ export const PlatformIcon3D: React.FC<PlatformIcon3DProps> = ({
     case 'google-review':
       return (
         <div
-          className={`relative ${sizeClasses} flex items-center justify-center rounded-2xl p-0.5 select-none transition-transform duration-300 group-hover:scale-105 ${className}`}
+          className={`relative ${sizeClasses} flex items-center justify-center rounded-2xl p-0.5 select-none ${className}`}
           style={{
             background: 'linear-gradient(135deg, rgba(255, 176, 0, 0.6) 0%, rgba(251, 188, 5, 0.4) 50%, rgba(234, 67, 53, 0.25) 100%)',
-            boxShadow: '0 8px 26px -2px rgba(255, 176, 0, 0.45), inset 0 1px 1.5px rgba(255, 255, 255, 0.5)',
+            boxShadow: '0 4px 18px -2px rgba(255, 176, 0, 0.3)',
           }}
         >
           {/* Inner 3D Container with Gold/Google Glass */}

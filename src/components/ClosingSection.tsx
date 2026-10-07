@@ -51,8 +51,8 @@ export const ClosingSection: React.FC = () => {
         </div>
 
         {/* Thank You Note */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-950/40 via-amber-900/20 to-amber-950/40 border border-[#FFB000]/30 text-amber-300/90 text-xs sm:text-sm font-semibold shadow-inner">
-          <Heart className="w-3.5 h-3.5 text-[#FFB000] fill-[#FFB000]/30 animate-pulse" />
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-300 text-xs sm:text-sm font-medium">
+          <Heart className="w-3.5 h-3.5 text-[#FFB000] fill-[#FFB000]" />
           <span>{businessInfo.closingMessage}</span>
         </div>
       </div>

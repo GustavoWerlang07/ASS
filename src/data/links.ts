@@ -34,10 +34,10 @@ export interface BusinessInfo {
 
 export const businessInfo: BusinessInfo = {
   name: "A.S.S Distribuidora de Bebidas",
-  tagline: "Sua bebida, a um toque de distância.",
+  tagline: "QUALIDADE E ALTO PADRÃO",
   description: "Todos os nossos canais em um só lugar.",
   guidanceText: "Escolha uma opção abaixo",
-  nfcText: "Conectado em segundos.",
+  nfcText: "",
   closingTitle: "Conecte-se com a A.S.S",
   closingMessage: "Obrigado pela preferência!",
   copyright: "© A.S.S Distribuidora de Bebidas. Todos os direitos reservados.",
