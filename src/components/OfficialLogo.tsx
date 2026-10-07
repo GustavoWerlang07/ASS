@@ -1,4 +1,5 @@
 import React from 'react';
+import logoImg from '../assets/logo.jpg';
 
 interface OfficialLogoProps {
   className?: string;
@@ -25,9 +26,13 @@ export const OfficialLogo: React.FC<OfficialLogoProps> = ({ className = '' }) =>
         <div className="relative w-full h-full rounded-full overflow-hidden bg-[#050505] flex items-center justify-center">
           {/* Official logo image uploaded by the client */}
           <img
-            src="/logo.jpg"
+            src={logoImg}
+            onError={(e) => {
+              // fallback to root public path if needed
+              (e.currentTarget as HTMLImageElement).src = '/logo.jpg';
+            }}
             alt="Logomarca oficial A.S.S Distribuidora de Bebidas"
-            className="w-full h-full object-cover select-none"
+            className="w-full h-full object-cover select-none bg-[#050505]"
             loading="eager"
             decoding="async"
           />

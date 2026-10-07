@@ -16,24 +16,29 @@ export default function App() {
   const [isShareOpen, setIsShareOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[#050505] text-white flex flex-col items-center justify-between font-sans selection:bg-[#FFB000] selection:text-black">
-      {/* Dark Premium Ambient Atmosphere */}
+    <div
+      className="relative min-h-screen text-white flex flex-col items-center justify-between font-sans selection:bg-[#FFB000] selection:text-black overflow-x-hidden"
+      style={{ backgroundColor: '#050505', minHeight: '100vh', width: '100%' }}
+    >
+      {/* Dark Premium Ambient Atmosphere (z-0) */}
       <BackgroundGlow />
 
-      {/* Main Responsive Wrapper (Optimized for 360px, 390px, 430px, Tablet & Desktop) */}
-      <div className="w-full max-w-md sm:max-w-lg px-4 sm:px-6 flex flex-col items-center">
-        {/* Top Header Section */}
-        <Header onOpenShare={() => setIsShareOpen(true)} />
+      {/* Main Responsive Wrapper (z-10, sits cleanly above background) */}
+      <div className="relative z-10 w-full max-w-md sm:max-w-lg px-4 sm:px-6 flex flex-col items-center min-h-screen justify-between py-2">
+        <div className="w-full flex flex-col items-center">
+          {/* Top Header Section */}
+          <Header onOpenShare={() => setIsShareOpen(true)} />
 
-        {/* The 4 Core Vertical Link Cards */}
-        <main className="w-full space-y-3 sm:space-y-3.5 my-2">
-          {mainLinks.map((link, index) => (
-            <SocialLinkCard key={link.id} link={link} index={index} />
-          ))}
-        </main>
+          {/* The 4 Core Vertical Link Cards */}
+          <main className="w-full space-y-3 sm:space-y-3.5 my-2">
+            {mainLinks.map((link, index) => (
+              <SocialLinkCard key={link.id} link={link} index={index} />
+            ))}
+          </main>
 
-        {/* Secondary Closing Section */}
-        <ClosingSection />
+          {/* Secondary Closing Section */}
+          <ClosingSection />
+        </div>
 
         {/* Minimalist Brand Footer */}
         <Footer />
